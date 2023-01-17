@@ -1,0 +1,47 @@
+/**
+ * @see https://www.electron.build/configuration/configuration
+ */
+{
+  "appId": "YourAppID",
+  "asar": true,
+  "icon": "public/favicon.ico",
+  "directories": {
+    "output": "release/${version}"
+  },
+  "files": [
+    "dist-electron",
+    "dist"
+  ],
+  "mac": {
+    "artifactName": "${productName}_${version}.${ext}",
+    "target": [
+      "dmg"
+    ],
+    "icon": "public/favicon.ico"
+  },
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": [
+          "x64"
+        ]
+      }
+    ],
+    "icon": "public/favicon.ico",
+    "artifactName": "${productName}_${version}.${ext}"
+  },
+  "nsis": {
+    /** 一键安装 **/
+    "oneClick": false,
+    "perMachine": false,
+    /** 允许用户选择安装目录 **/
+    "allowToChangeInstallationDirectory": true,
+    /** 卸载后删除用户数据 **/
+    "deleteAppDataOnUninstall": false
+  },
+  "fileAssociations": [{
+    "ext": "md",
+    "icon": "public/markdown.png",
+  }]
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/katex/katex.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" /> -->
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *;**script-src 'self' http://onlineerp.solution.quebec 'unsafe-inline' 'unsafe-eval';**"> -->
+  <style id="content-theme"></style>
+  <style>
+    .load-wrapper {
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .loading {
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      border: 3px solid #eee;
+      border-radius: 50%;
+      border-top: 3px solid gray;
+      /* 将上边框改成蓝色 */
+    }
+
+    /* 定义动画 */
+    @keyframes loadingAnimation {
+
+      /* 动画开始旋转0度 */
+      0% {
+        transform: rotate(0deg);
+      }
+
+      /* 动画结束旋转360度 */
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* 添加动画 */
+    .loading {
+      animation: loadingAnimation .5s infinite linear;
+    }
+  </style>
+  <title>wowEditor</title>
+</head>
+<div id="app">
+</div>
+<div class="load-wrapper">
+  <div class="loading"></div>
+  <div>加载中...</div>
+</div>
+<iframe id="vditorExportIframe" style="display: none;"></iframe>
+<script src="/lute.min.js"></script>
+<script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+{
+    "picBed": {
+      "uploader": "github", 
+      "current": "github",
+      "github": {
+        "repo": "webpon/static-store", 
+        "token": "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",
+        "path": "img/",
+        "customUrl": "https://cdn.jsdelivr.net/gh/webpon/static-store", 
+        "branch": "master" 
+      }
+    },
+    "picgoPlugins": {}
+  }
