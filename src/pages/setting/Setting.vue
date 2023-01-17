@@ -36,7 +36,6 @@
                                     <t-select bordered style="width: 200px;" @change="setMode"
                                         :value="storeConfig.mode">
                                         <t-option key="wysiwyg" label="所见即所得" value="wysiwyg" />
-                                        <t-option key="ir" label="即时渲染" value="ir" />
                                         <t-option key="sv" label="分屏预览" value="sv" />
                                     </t-select>
                                 </t-form-item>
