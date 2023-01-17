@@ -215,7 +215,7 @@ export default {
 <style lang="less" scoped>
 .backtotop {
     position: fixed;
-    z-index: 99999;
+    z-index: 100;
     bottom: 80px;
     right: 120px;
     font-size: 33px;
