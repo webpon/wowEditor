@@ -50,7 +50,7 @@
     "echarts": "^5.4.1",
     "flowchart.js": "^1.17.1",
     "katex": "^0.16.4",
-    "mermaid": "^9.3.0",
+    "mermaid": "^10.0.0",
     "pinia": "^2.0.28",
     "tdesign-icons-vue-next": "^0.1.7",
     "tdesign-vue-next": "^1.0.2",
